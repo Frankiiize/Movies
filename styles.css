@@ -10,11 +10,13 @@
 html{
     font-size: 62.5%;
 }
-.Header_container{
+/* -------------------------<HEADER>--------------------- */
+.Header_container,
+.main_container{
    width: 100%;
    max-width: 1024px;
    min-width: 320px;
-   height: 90px;
+   height: auto;
    font-size: 1.6rem;
    margin: 0 auto;
 }
@@ -76,3 +78,55 @@ html{
     background-size: cover;
     opacity: 0.5;
 }
+/* -------------------------</HEADER>--------------------- */
+/* -------------------------<MAIN>--------------------- */
+
+.main_container-content{
+    display: grid;
+    grid-template-columns: 1fr 90%;
+}
+.sidebar_container{
+    display: grid;
+    grid-template-rows: 90px 90px 90px 1fr;
+    background-color: var(--movies-red);
+}
+
+.home{
+    width: 32px;
+    height: 32px;
+    background-image: url(./assets/iconos/003-home3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: invert();
+}
+.trending{
+    width: 32px;
+    height: 32px;
+    background-image: url(./assets/iconos/170-fire.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: invert();
+}
+.likes{
+    width: 32px;
+    height: 32px;
+    background-image: url(./assets/iconos/219-heart.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: invert();
+}
+.ajustes{
+    width: 32px;
+    height: 32px;
+    background-image: url(./assets/iconos/big-gear.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: invert();
+}
+
+
+/* -------------------------</MAIN>--------------------- */
