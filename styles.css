@@ -179,7 +179,7 @@ body{
 .movies_container{
     width: 100%;
     display: grid;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 70px 1fr;
     margin: 0 auto;
     height: auto;
     min-width: 280px;
@@ -199,51 +199,58 @@ body{
     grid-column-gap: 3px;
     justify-content: space-evenly;
 }
-.movies_container-card a{
+.card-container{
     color: white;
     font-size: 1.2rem;
     text-decoration: none;
-    height: 170px;
+    height: 181px;
     width: auto;
     min-width: 250px;
- 
-}
-.movies_container-card figure{
-    /* width: 280px; */
-    height: 170px;
-    max-width: 280px;
-    min-width: 200px;
     position: relative;
     overflow: hidden;
-}
-.movies_container-card figure img{
-    width: 100%;
     border-radius: 5px;
-    overflow: hidden;
-   
+ 
+}
+.card-container .card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-container .card-img img:hover{
+    transform: scale(1.2);
+    transition: .7s;
+
 }
 .card-overlay{
-    position: absolute;
-    z-index: 1;
+    border: 1px solid var(--movies-red);
+    width: 100%;
+    height: auto;
     background-color: var(--movies-red);
-    top: 110px;
-    padding: 5px 10px;
+    position: absolute;
+    top: 140px;
+    overflow-y:hidden ;
+}
+
+.card-overlay:hover{
+    top: 0;
+    height: 181px;
+    background: rgba(253, 101, 100, .5);
+    transition: .6s;
+}
+.card-overlay h3{
+    font-size: 2rem;
+    padding: 5px 5px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.card-overlay p{
+    padding: 10px;
+    text-align: start;
     font-size: 1.4rem;
     
-}
-.card-overlay:hover{
-    position: absolute;
-    z-index: 1;
-    background-color: var(--movies-red);
-    top: 0px;
-    padding: 5px 10px;
-    height: 170px;
-    transition: rgba(253, 101, 100, 0.6);
-    opacity: 0.8;
-}
-.card-overlay figcaption:hover{
-    opacity: 1;
-    font-weight: bold;
 }
 
 
