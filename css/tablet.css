@@ -1,0 +1,12 @@
+:root{
+    --movies-red:#fd6564;
+    --ligth-grey:#dddddd;
+}
+.movies_container-card{
+    grid-template-columns: repeat(2,49%);
+    grid-column-gap: 2px;
+}
+.card-overlay:hover{
+    top: 140px;
+    background: var(--movies-red);
+}
