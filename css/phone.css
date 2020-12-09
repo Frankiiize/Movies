@@ -1,0 +1,68 @@
+body{
+    
+}
+.Header_container,
+.main_container{
+    width: 100%;
+    min-width: 320px;
+    min-height: inherit;
+}
+.header_container-nav{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: "logo"
+                        "logo"
+                        "input"
+                        "hamburguesa";
+    min-height: 250px;                   
+
+}
+.header_nav-logo{
+    grid-area: logo;
+    justify-self: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.header_nav-userImg{
+    display: none;
+    grid-area: user;
+    justify-content:flex-end ;
+    margin-bottom: 10px;
+}
+.header_nav-search{
+    grid-area: input;
+    margin-bottom: 10px;
+}
+.hamburguesa{
+    display: flex;
+    justify-self: right;
+    align-self: center;
+    margin-right: 20px;
+    grid-area: hamburguesa;
+    width: 32px;
+    height: 32px;
+    background-image: url(../assets/iconos/bars-solid.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+    
+
+}
+.main_container-content{
+    display: flex;
+    flex-direction: column;
+    
+}
+.sidebar_container{
+    display: none;
+}
+.movies_container{
+    display: flex;
+    flex-direction: column;
+}
+.movies_container-card{
+    display: flex;
+    flex-wrap: wrap;
+}

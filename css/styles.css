@@ -17,11 +17,11 @@ body{
 .Header_container,
 .main_container{
    width: 100%;
-   max-width: 1024px;
-   min-width: 320px;
+   /* max-width: 1024px;
+   min-width: 320px; */
    height: auto;
    font-size: 1.6rem;
-   margin: 0 auto;
+   /* margin: 0 auto; */
 }
 .header_container-nav{
     width: 100%;
@@ -33,7 +33,7 @@ body{
     justify-content: center;
 }
 .header_nav-logo{
-    background-image: url(./assets/popcorn.png);
+    background-image: url(../assets/popcorn.png);
     background-size: 55px;
     background-repeat: no-repeat;
     background-position: left;
@@ -82,7 +82,7 @@ body{
     display: inline;
     width: 32px;
     height: 32px;
-    background-image: url(./assets/mdi_keyboard_arrow_down.svg);
+    background-image: url(../assets/mdi_keyboard_arrow_down.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -144,7 +144,7 @@ body{
 .home{
     width: 32px;
     height: 32px;
-    background-image: url(./assets/iconos/home-solid.svg);
+    background-image: url(../assets/iconos/home-solid.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -153,7 +153,7 @@ body{
 .trending{
     width: 32px;
     height: 32px;
-    background-image: url(./assets/iconos/170-fire.png);
+    background-image: url(../assets/iconos/170-fire.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -162,7 +162,7 @@ body{
 .likes{
     width: 32px;
     height: 32px;
-    background-image: url(./assets/iconos/heart-solid.svg);
+    background-image: url(../assets/iconos/heart-solid.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -171,13 +171,15 @@ body{
 .ajustes{
     width: 32px;
     height: 32px;
-    background-image: url(./assets/iconos/cog-solid.svg);
+    background-image: url(../assets/iconos/cog-solid.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     filter: invert();
 }
-
+.hamburguesa{
+    display: none;
+}
 /* -------------------------</SIDEBAR>--------------------- */
 /* -------------------------<CONTENT>--------------------- */
 .movies_container{

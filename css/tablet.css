@@ -2,9 +2,20 @@
     --movies-red:#fd6564;
     --ligth-grey:#dddddd;
 }
+.Header_container,
+.main_container{
+    width: inherit;
+    height: inherit;
+}
+.hamburguesa{
+    display: none;
+}
 .movies_container-card{
     grid-template-columns: repeat(2,49%);
     grid-column-gap: 2px;
+}
+.movies_container-card a:nth-of-type(9){
+    grid-column: span 2;
 }
 .card-overlay:hover{
     top: 140px;
