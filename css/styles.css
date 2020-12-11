@@ -134,6 +134,11 @@ body{
     text-decoration: none;
     color: white;
 }
+.sidebar_nav-container ul li a:hover{
+    /* background-color:#BF2C49; */
+    filter: invert();
+    opacity: .7;
+}
 .sidebar_nav-container ul li:nth-of-type(4){
     align-self: flex-end;
 }
@@ -150,6 +155,7 @@ body{
     background-size: cover;
     filter: invert();
 }
+
 .trending{
     width: 32px;
     height: 32px;
