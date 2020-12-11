@@ -1,6 +1,3 @@
-body{
-    
-}
 .Header_container,
 .main_container{
     width: 100%;
@@ -45,10 +42,12 @@ body{
 .sidebar_nav-container{
     height: 9rem;
     overflow: hidden;
+    transition: .4s;
     
 }
 
 .sidebar_nav-container ul{
+    margin-top: 10px;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(4,70px);
 }
@@ -58,9 +57,45 @@ body{
     align-items: center;
     justify-content: space-evenly;
 }
-
-
-.hamburguesa{
+/* ---------closeOpen */
+.container_openClose{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    /* margin-top: 5px; */
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+}
+.line1, .line2, .line3{
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: 0.4s;
+    /* filter: invert(); */
+}
+/* Rotate first bar */
+.change .line1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change .line2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .line3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+/* ---------/closeOpen */
+.likes{
+    margin-left: -9px;
+}
+/* .hamburguesa{
     display: block;
     width: 32px;
     height: 32px;
@@ -73,7 +108,7 @@ body{
     grid-row-start: 1;
     margin-top: 14px;
     filter: invert();
-}
+} */
 .sidebar_nav-container li:nth-child(1){
     grid-column: 1 / 3;
 }
@@ -97,9 +132,9 @@ body{
     height: 30rem;
     border-radius: 5px;
     transition: .3s;
-    -webkit-box-shadow: 0px 2px 13px 2px rgba(255,255,255,1);
+   /*  -webkit-box-shadow: 0px 2px 13px 2px rgba(255,255,255,1);
     -moz-box-shadow: 0px 2px 13px 2px rgba(255,255,255,1);
-    box-shadow: 0px 2px 13px 2px rgba(255,255,255,1);
+    box-shadow: 0px 2px 13px 2px rgba(255,255,255,1); */
 }
 
 
