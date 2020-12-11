@@ -26,13 +26,13 @@
                 <img  src="./assets/fotoperfil.jpg" alt="Foto de perfil">
                 <span class="down-arrow"></span>
             </figure>
-            <i class="hamburguesa"></i>            
+                
         </nav>
     </header>
     <main class="main_container">
         <section class="main_container-content">
             <section class="sidebar_container">
-               <nav class="sidebar_nav-container">
+               <nav id="topnav" class="sidebar_nav-container ">
                     <ul>
                         <li>
                             <a href="">
@@ -57,11 +57,12 @@
                                 <i class="fas ajustes"></i>
                                 <p>Ajustes</p>
                             </a>
-                        </li>                 
+                        </li>    
+                        <i id="hamburguesa" onclick="myfuntion()" class="fas hamburguesa"></i>             
                     </ul>
                </nav>
             </section>
-            <section class="movies_container">
+            <section  class="movies_container">
                 <h1 class="movies_container-title">HOT!</h1>
                 <section class="movies_container-card">
                    <a class="card-container" href="">
@@ -146,8 +147,9 @@
                      </div>
                    </a>
                 </section>
-            </section>
+            </section> 
         </section>
     </main>
+    <script src="./code/responsiveNav.js"></script>
 </body>
 </html>
